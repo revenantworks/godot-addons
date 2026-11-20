@@ -25,5 +25,5 @@ faith and explain the decision when they can.
 
 ## Report a problem
 
-Use the private report form: <https://github.com/revenantworks/godot-pixel-fx/security/advisories/new>.
+Use the private report form: <https://github.com/revenantworks/godot-addons/security/advisories/new>.
 Start the title with "Conduct report". Only maintainers can read it.

@@ -1,5 +1,5 @@
 name: Feature request
-description: Suggest a change to a shader, a new shader, or a demo or docs change.
+description: Suggest a change to an addon, its demo or its docs.
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
@@ -11,8 +11,8 @@ body:
   - type: input
     id: component
     attributes:
-      label: Shader or part
-      description: Name the part this change is for, or write "new shader".
+      label: Addon and part
+      description: The addon's folder and the part this change is for.
     validations:
       required: true
   - type: textarea

@@ -1,6 +1,6 @@
 ## What changed
 
-<!-- One or two sentences. -->
+<!-- One or two sentences. Name the addon folder. -->
 
 ## Why
 
@@ -8,10 +8,9 @@
 
 ## Checks
 
-- [ ] `GODOT=/path/to/godot tools/check.sh` (or `tools/check.ps1` on Windows) passes: import, headless and render tests
-- [ ] I updated `EXPECTED_TESTS` in `tests/run_tests.gd` if I added or removed a test
+- [ ] The addon's own checks pass (its README says how; Pixel FX Starter: `GODOT=/path/to/godot pixel-fx/tools/check.sh`)
 - [ ] `python tools/pii_scan.py --staged` found no hits, and I did not use `--no-verify`
 - [ ] No personal data: no name, path, email, employer, client, or key
-- [ ] New art is CC0 or my own, and credited in `demo/art/CREDITS.md`
-- [ ] I updated `README.md` and `CHANGELOG.md` if behaviour changed
+- [ ] New art is CC0 or my own, and credited in the addon folder
+- [ ] I updated the addon's `README.md` and `CHANGELOG.md` if behaviour changed
 - [ ] I read `CONTRIBUTING.md`
