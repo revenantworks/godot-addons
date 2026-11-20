@@ -1,5 +1,5 @@
 name: Bug report
-description: A shader, the demo, a tool or a test does not work as written.
+description: An addon, its demo, a tool or a test does not work as written.
 title: "[Bug]: "
 labels: ["bug"]
 body:
@@ -9,28 +9,27 @@ body:
         Thanks for the report. Do not paste secrets, real names, personal paths, or email
         addresses. Use placeholders such as `<name>` and `~/path/to/file`.
         To report a security problem, use the private form linked on the issue chooser.
-  - type: dropdown
+  - type: input
+    id: addon
+    attributes:
+      label: Addon
+      description: The addon's folder in this repository.
+      placeholder: "for example: pixel-fx"
+    validations:
+      required: true
+  - type: input
     id: component
     attributes:
       label: Part
-      options:
-        - outline
-        - hit_flash
-        - palette_swap
-        - dissolve
-        - pixelate
-        - Demo scene
-        - Tools (make_palette, capture_screenshots, check scripts)
-        - Tests
-        - Docs
+      description: The script, shader, demo, tool, test or doc that misbehaves.
     validations:
       required: true
   - type: input
     id: version
     attributes:
-      label: Pixel FX Starter version
+      label: Addon version
       description: The release or commit you used.
-      placeholder: "for example: 0.1.0"
+      placeholder: "for example: 1.0.0"
   - type: input
     id: godot
     attributes:

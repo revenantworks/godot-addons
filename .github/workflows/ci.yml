@@ -1,14 +1,14 @@
 name: ci
 
-# Every check in tools/check.sh: import, the 9 headless tests, then the 21 render tests on a
-# software OpenGL GPU (Mesa llvmpipe under Xvfb). The runner fails on a test or file count
+# Pixel FX Starter's checks (pixel-fx/tools/check.sh): import, the 9 headless tests, then the 21
+# render tests on a software OpenGL GPU (Mesa llvmpipe under Xvfb). The runner fails on a test or file count
 # that differs from EXPECTED_SCRIPTS and EXPECTED_TESTS, and on any engine ERROR line.
 # Push to main and v* tags only, the same rule as revenantworks/claude-skills: the merged
 # push to main runs the same checks a pull_request run would.
 on:
   push:
     branches: [main]
-    tags: ["v*"]
+    tags: ["v*", "pixel-fx-v*"]
   workflow_dispatch:
 
 permissions:
@@ -48,4 +48,4 @@ jobs:
       - name: Run every check
         env:
           LIBGL_ALWAYS_SOFTWARE: "1"
-        run: tools/check.sh
+        run: pixel-fx/tools/check.sh

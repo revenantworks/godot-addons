@@ -4,13 +4,22 @@ Thanks for helping. This repo ships to the public, so one rule comes before ever
 **no personal data reaches a commit.** No name, no personal or machine path, no machine or
 account name, no email address, no secret.
 
+## How the repo is laid out
+
+One folder per addon (`pixel-fx/`, and so on). Each folder is a whole Godot project: open it in
+Godot to run that addon's demo and tests. The addon itself is the folder's `addons/<name>/`,
+which is what a release zip carries. The root holds only the shared files: licence, notice,
+community files, CI and the PII barrier.
+
+Each folder is published from the Revenantworks source tree, so a pull request here is read
+and, when it is taken, carried over by hand into the next release of that addon.
+
 ## Set up a clone (once)
 
 ```bash
-git clone https://github.com/revenantworks/godot-pixel-fx.git
-cd godot-pixel-fx
+git clone https://github.com/revenantworks/godot-addons.git
+cd godot-addons
 git config core.hooksPath .githooks      # arms the PII pre-commit hook
-GODOT=/path/to/godot tools/check.sh      # Windows: pwsh -File tools/check.ps1 -Godot <Godot console exe>
 ```
 
 `core.hooksPath` is stored in the clone's own config. A fresh clone does not have it: run the
@@ -43,27 +52,24 @@ accepted by rule and by one file in `.pii-scan.json`; use example values (`examp
 
 ## Tests
 
-Every change runs `tools/check.sh` in CI (`.github/workflows/ci.yml`): import, 9 headless tests,
-then 21 render tests checked pixel by pixel on a software GPU. Run it before you push.
+Each addon folder says how its tests run in its own README. Pixel FX Starter's run in CI
+(`.github/workflows/ci.yml`): `pixel-fx/tools/check.sh` imports the project, runs 9 headless
+tests, then 21 render tests checked pixel by pixel on a software GPU:
 
-- A new test goes in `tests/test_*.gd` and raises `EXPECTED_TESTS` in `tests/run_tests.gd`.
-  A new test file also raises `EXPECTED_SCRIPTS`. The runner fails on a count that differs, so
-  a file that fails to parse cannot hide.
-- A render test never counts as passed under `--headless`. It is skipped there.
-- Never weaken a check to make it pass. Fix the shader or the test's expectation, and say why.
+```bash
+GODOT=/path/to/godot pixel-fx/tools/check.sh
+```
 
-## Shaders
+Addons with GUT tests (`addons/<name>/tests/`) need GUT 9.x in that folder's `addons/gut/`.
 
-- Read texture pixels with `texelFetch`, never `texture()`, so nothing blends half pixels.
-- Carry the node's modulate through the `modulate` varying, as the existing shaders do.
-- Keep every uniform in the README table for its shader, with its default.
+- Never weaken a check to make it pass. Fix the code or the test's expectation, and say why.
 
 ## Art
 
-Demo art must be CC0 or your own work. Credit it in `demo/art/CREDITS.md`. No AI-made images,
+Demo art must be CC0 or your own work, credited in the addon folder. No AI-made images,
 sounds or fonts.
 
 ## Commits
 
-`<scope>: <imperative summary>` on the first line, then a body that says why. Scopes:
-`shaders`, `demo`, `tools`, `tests`, `docs`, `ci`.
+`<scope>: <imperative summary>` on the first line, then a body that says why. The scope is
+the addon's folder name, or `ci`, `docs` or `tools` for the shared files.
