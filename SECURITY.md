@@ -2,7 +2,12 @@
 
 ## Supported versions
 
-Only the latest release of each addon gets security fixes.
+Only the latest release of each addon gets security fixes, and only inside its support period
+(see [`SUPPORT.md`](SUPPORT.md)).
+
+| Addon | Version line | Security fixes until |
+|---|---|---|
+| Pixel FX Starter | 0.x | 2027-11-23 |
 
 ## What to report
 
@@ -24,5 +29,6 @@ placeholders instead of real secrets or other people's data.
 
 ## What to expect
 
-Reports are read when time allows. No reply time is promised. Reporters are credited in the
-release notes unless they ask not to be.
+Reports are read when time allows. No reply is guaranteed, and no fix or fix date is promised.
+These addons are free, unpaid and provided "AS IS". Reporters are credited in the release notes
+unless they ask not to be.
