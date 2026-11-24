@@ -15,14 +15,14 @@ Do not paste secrets, real names, personal paths, or email addresses into any pu
 
 ## Support period
 
-**Support period.** Pixel FX Starter 0.x gets security fixes until 2027-11-23. Only the latest
-release in that line gets fixes. After that date it gets no fixes of any kind and is end-of-life.
+**Support period.** Pixel FX Starter 0.x has a best-effort support period until 2027-11-23. Security fixes are not guaranteed, and only the latest
+release in that line is considered. After that date nothing is expected, and it is end-of-life.
 Feature updates are not promised. End-of-life dates for every version are listed here. The date
 may be renewed if the addon is still maintained; silence is not a promise.
 
-| Addon | Version line | Security fixes until | Status |
+| Addon | Version line | Best-effort fixes until | Status |
 |---|---|---|---|
 | Pixel FX Starter | 0.x | 2027-11-23 | supported, best effort |
 
 Support is best effort and unpaid. No reply time, fix time, update or fitness for any purpose is
-promised. Donations, if you choose to make one, buy nothing: no support, no priority, no features.
+promised. Donations support the work. They buy nothing: every release, fix and the source stay free for everyone.

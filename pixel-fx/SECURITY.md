@@ -2,10 +2,10 @@
 
 ## Supported versions
 
-Only the latest release gets security fixes, and only inside its support period
-(see [`SUPPORT.md`](SUPPORT.md)).
+Security fixes are best effort, with no guarantee. Only the latest release is considered, and only
+inside its support period, after which nothing is expected (see [`SUPPORT.md`](SUPPORT.md)).
 
-| Version line | Security fixes until |
+| Version line | Best-effort fixes until |
 |---|---|
 | 0.x | 2027-11-23 |
 
@@ -32,3 +32,6 @@ placeholders instead of real secrets or other people's data.
 Reports are read when time allows. No reply is guaranteed, and no fix or fix date is promised.
 This addon is free, unpaid and provided "AS IS". We credit reporters in the release notes
 unless they ask us not to.
+
+Disclosure is coordinated: please keep a report private until a fix is released or 90 days have passed,
+whichever comes first. Reporters are credited if they want to be.

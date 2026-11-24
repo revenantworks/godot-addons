@@ -23,5 +23,5 @@ Support is best effort and has a dated end: see [`SUPPORT.md`](SUPPORT.md). Secu
 
 ## Donations
 
-Everything here is free. If you choose to donate, a donation buys nothing: no support, no priority, no
-features and no updates. Paid art packs are sold elsewhere and are separate products.
+Donations support the work. They buy nothing: every release, fix and the source stay free for everyone. No support,
+no priority, no features and no updates. Paid art packs are sold elsewhere and are separate products.
