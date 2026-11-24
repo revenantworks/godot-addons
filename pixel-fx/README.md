@@ -157,6 +157,19 @@ them: that is the credit the licence asks for.
 See also [`SUPPORT.md`](SUPPORT.md), [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) and
 [`ACCESSIBILITY.md`](ACCESSIBILITY.md).
 
+## No warranty
+
+**No warranty.** This software is free and provided "AS IS", without warranty of any kind, under the Apache
+License 2.0 (sections 7 and 8). You use it at your own risk. Nothing here promises support, updates or
+fitness for any purpose.
+
+Support is best effort and has a dated end: see [`SUPPORT.md`](SUPPORT.md).
+
+## Donations
+
+Pixel FX Starter is free. If you choose to donate, a donation buys nothing: no support, no priority, no
+features and no updates.
+
 ## AI use
 
 The shader code, demo scene, tools and tests were written with Claude (Anthropic) and are
