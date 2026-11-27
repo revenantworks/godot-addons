@@ -1,0 +1,14 @@
+# Godot text files use LF line endings on every OS.
+* text=auto eol=lf
+
+# The download (GitHub archive, used by the Godot Asset Library and for the itch.io zip)
+# carries addons/zoom_bands/ only. These root files stay on GitHub.
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/README.md export-ignore
+/CHANGELOG.md export-ignore
+/LICENSE export-ignore
+/NOTICE export-ignore
+/project.godot export-ignore
+/media export-ignore
+/tools export-ignore

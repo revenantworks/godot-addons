@@ -1,0 +1,17 @@
+; Engine configuration file.
+; This project exists to run the Zoom Bands demo. It is not part of the download
+; (see .gitattributes): the Asset Library and itch.io zip carry addons/zoom_bands/ only.
+
+config_version=5
+
+[application]
+
+config/name="Zoom Bands"
+config/description="Demo project for the Zoom Bands plugin."
+run/main_scene="res://addons/zoom_bands/demo/demo.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
