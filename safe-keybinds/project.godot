@@ -1,0 +1,17 @@
+; Engine configuration file.
+; This project exists to run the Safe Keybinds demo. It is not part of the download
+; (see .gitattributes): the Asset Library and itch.io zip carry addons/safe_keybinds/ only.
+
+config_version=5
+
+[application]
+
+config/name="Safe Keybinds"
+config/description="Demo project for the Safe Keybinds plugin."
+run/main_scene="res://addons/safe_keybinds/demo/demo.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

@@ -10,6 +10,12 @@ Free Godot 4 plugin: crossfade 2D detail layers as the camera zooms, with no pop
 
 [folder](zoom-bands/) · [releases](https://github.com/revenantworks/godot-addons/releases?q=zoom-bands-v)
 
+## Safe Keybinds
+
+Free Godot 4 plugin: let players rebind keyboard, mouse and gamepad controls, with crash-safe saves and a ready-made Controls screen.
+
+[folder](safe-keybinds/) · [releases](https://github.com/revenantworks/godot-addons/releases?q=safe-keybinds-v)
+
 ## Pixel FX Starter
 
 Five free pixel-perfect 2D shaders for Godot 4.7: outline, hit flash, palette swap, dissolve and pixelate.

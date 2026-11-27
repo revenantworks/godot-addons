@@ -1,0 +1,7 @@
+{
+  "dirs": ["res://addons/safe_keybinds/tests"],
+  "include_subdirs": false,
+  "prefix": "test_",
+  "should_exit": true,
+  "log_level": 1
+}
